@@ -1,7 +1,7 @@
 import 'bootstrap';
 
 import './fontawesome.js';
-import '../scss/app.scss';
+import '../sass/app.scss';
 
 $(function() {
     console.log('success');
