@@ -1,7 +1,7 @@
 {
-  "name": "basic",
+  "name": "bootstrap4-starter-files",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Starter Files that help you Working with Bootstrap 4 + Webpack + Fontawesome 5",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -9,8 +9,8 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Eding Muhamad Saprudin",
+  "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-brands": "^5.0.9",
