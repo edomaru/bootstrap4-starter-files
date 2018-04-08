@@ -23,6 +23,10 @@ module.exports = function(env, argv) {
                           loader: "html-loader"
                         }
                       ]
+                    },
+                    { 
+                        test: /\.(jpg|jpeg|png|gif)$/, 
+                        use: [ "file-loader?name=img/[name].[ext]" ] 
                     },        
                     {
                         test: /\.(scss)$/,
@@ -30,14 +34,15 @@ module.exports = function(env, argv) {
                             loader: MiniCssExtractPlugin.loader, // inject CSS to page
                         }, {
                             loader: 'css-loader', // translates CSS into CommonJS modules
+                            options: { url: false }
                         }, {
                             loader: 'postcss-loader', // Run post css actions
                             options: {
-                            plugins: function () { // post css plugins, can be exported to postcss.config.js
-                                return [
-                                    require('autoprefixer')
-                                ];
-                            }
+                                plugins: function () { // post css plugins, can be exported to postcss.config.js
+                                    return [
+                                        require('autoprefixer')
+                                    ];
+                                }
                             }
                         }, {    
                             loader: 'sass-loader' // compiles Sass to CSS
