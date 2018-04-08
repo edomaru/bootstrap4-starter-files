@@ -24,13 +24,19 @@ git clone https://github.com/edomaru/bootstrap4-starter-files
 npm install
 ```
 
-- To start the project
+- Start the project
 
 ```
 npm run start
 ```
 
-- For production you can type
+- Compile the project
+
+```
+npm run dev
+```
+
+- Compile the project (for production)
 
 ```
 npm run build
